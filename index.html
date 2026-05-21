@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENOVA — Limpieza y Mantenimiento en Altura · Punta del Este</title>
+  <meta name="description" content="Servicios profesionales de limpieza y mantenimiento en altura para edificios, hoteles, empresas y obras en Punta del Este, Uruguay. Precisión donde otros no llegan.">
+  <meta name="theme-color" content="#080D14">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=20260521">
+</head>
+<body>
+
+  <!-- ═══ SKIP LINK ═══ -->
+  <a href="#servicios" class="skip-link">Ir al contenido</a>
+
+  <!-- ═══ INTRO CINEMATICO ═══ -->
+  <div id="intro" aria-hidden="true">
+    <div id="intro-glass"></div>
+
+    <div id="intro-climber">
+      <div id="intro-rope"></div>
+      <svg id="intro-char" viewBox="0 0 90 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Casco -->
+        <ellipse cx="45" cy="18" rx="16" ry="14" fill="#1B4F72"/>
+        <rect x="29" y="10" width="32" height="6" rx="3" fill="#2471A3"/>
+        <rect x="40" y="4" width="10" height="8" rx="2" fill="#9BBACB" opacity=".5"/>
+        <!-- Visor -->
+        <rect x="36" y="16" width="18" height="6" rx="3" fill="#D6EAFC" opacity=".85"/>
+        <!-- Cuerpo / arnés -->
+        <rect x="33" y="32" width="24" height="38" rx="5" fill="#1B4F72"/>
+        <rect x="36" y="34" width="18" height="34" rx="4" fill="#0D1520"/>
+        <!-- Arnés cruces -->
+        <line x1="36" y1="34" x2="54" y2="58" stroke="#2471A3" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="54" y1="34" x2="36" y2="58" stroke="#2471A3" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Cinturón -->
+        <rect x="32" y="52" width="26" height="5" rx="2" fill="#2471A3"/>
+        <rect x="42" y="51" width="6" height="7" rx="1.5" fill="#9BBACB"/>
+        <!-- Brazos -->
+        <rect x="20" y="36" width="13" height="7" rx="3.5" fill="#1B4F72"/>
+        <rect x="57" y="36" width="13" height="7" rx="3.5" fill="#1B4F72"/>
+        <!-- Piernas -->
+        <rect x="35" y="70" width="8" height="28" rx="4" fill="#162030"/>
+        <rect x="47" y="70" width="8" height="28" rx="4" fill="#162030"/>
+        <!-- Botas -->
+        <rect x="33" y="94" width="12" height="8" rx="3" fill="#1B4F72"/>
+        <rect x="45" y="94" width="12" height="8" rx="3" fill="#1B4F72"/>
+        <!-- Guantes -->
+        <circle cx="23" cy="43" r="4" fill="#2471A3"/>
+        <circle cx="67" cy="43" r="4" fill="#2471A3"/>
+        <!-- Mosquetones -->
+        <circle cx="45" cy="55" r="3" fill="none" stroke="#9BBACB" stroke-width="1.5"/>
+        <circle cx="38" cy="53" r="2" fill="none" stroke="#9BBACB" stroke-width="1"/>
+        <circle cx="52" cy="53" r="2" fill="none" stroke="#9BBACB" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div id="intro-squeegee">
+      <div id="intro-sq-water"></div>
+      <div id="intro-sq-blade">
+        <div id="intro-sq-handle"></div>
+      </div>
+      <div id="intro-sq-drips"></div>
+    </div>
+
+    <div id="intro-logo">
+      <img src="assets/img/logo-renova-trans.png" alt="RENOVA">
+      <p class="intro-tagline">Limpieza &amp; mantenimiento en altura</p>
+    </div>
+
+    <div id="intro-bubbles"></div>
+    <div id="intro-skip">Tocá para saltar</div>
+  </div>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- ═══ WHATSAPP FLOAT ═══ -->
+  <a href="https://wa.me/59892588755?text=Hola%20RENOVA%2C%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto."
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">Escribinos por WhatsApp</span>
+  </a>
+
+  <!-- ═══ HEADER / NAV ═══ -->
+  <header id="header" class="nav-header">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#" class="nav-logo nav-logo-pill" aria-label="RENOVA — Inicio">
+        <span class="nav-logo-sweep"></span>
+        <span class="nav-logo-text">RENOVA</span>
+      </a>
+
+      <div id="navMenu" class="nav-menu" role="menubar">
+        <a href="#inicio" class="nav-link" role="menuitem">Inicio</a>
+        <a href="#servicios" class="nav-link" role="menuitem">Servicios</a>
+        <a href="#nosotros" class="nav-link" role="menuitem">Nosotros</a>
+        <a href="#galeria" class="nav-link" role="menuitem">Galería</a>
+        <a href="#ubicacion" class="nav-link" role="menuitem">Ubicación</a>
+        <a href="#contacto" class="nav-link" role="menuitem">Contacto</a>
+      </div>
+
+      <a href="#contacto" class="btn btn-cta">Solicitar Presupuesto</a>
+
+      <button id="navBurger" class="nav-burger" aria-label="Menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="inicio" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/img/galeria-1.jpg">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-overlay-side"></div>
+    <div class="hero-grain"></div>
+
+    <div class="hero-layout">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-dot"></span>
+          Punta del Este, Uruguay
+        </div>
+        <h1 class="hero-title">
+          Limpieza y mantenimiento en&nbsp;altura.<br>
+          <em>Precisión donde otros no llegan.</em>
+        </h1>
+        <p class="hero-sub">
+          Servicios profesionales para edificios, hoteles, empresas y obras en Punta del Este, Uruguay.
+        </p>
+        <div class="hero-actions">
+          <a href="#servicios" class="btn btn-pulse">
+            <span class="btn-shine"></span>
+            <span class="btn-pulse-label">Ver servicios</span>
+          </a>
+          <a href="https://wa.me/59892588755?text=Hola%20RENOVA%2C%20quiero%20solicitar%20un%20presupuesto." class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+            Contactanos ahora
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-logo-mark">
+        <div class="hero-logo-glow"></div>
+        <img class="hero-logo-mark-img" src="assets/img/logo-renova-trans.png" alt="RENOVA — Logo" width="1536" height="1024">
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ STATS STRIP ═══ -->
+  <div class="stats-strip">
+    <div class="section-container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-num-wrap">
+            <span class="stat-num" data-count-to="100">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Proyectos realizados</span>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-num-wrap">
+            <span class="stat-num" data-count-to="3">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-num-wrap">
+            <span class="stat-suffix">+</span>
+            <span class="stat-num" data-count-to="99">0</span>
+          </div>
+          <span class="stat-label">Clientes satisfechos</span>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-num-wrap">
+            <span class="stat-num" data-count-to="100">0</span>
+            <span class="stat-suffix">%</span>
+          </div>
+          <span class="stat-label">Seguridad garantizada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SERVICIOS ═══ -->
+  <section id="servicios" class="services section">
+    <div class="services-bg">
+      <img src="assets/img/galeria-7.jpg" alt="" loading="lazy">
+      <div class="services-bg-overlay"></div>
+    </div>
+
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Nuestros servicios</p>
+        <h2 class="section-title">Soluciones integrales <em>en altura</em></h2>
+        <p class="section-sub">Cada proyecto exige técnicas específicas, equipo certificado y un equipo preparado para operar donde otros no pueden.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- 1. Limpieza de fachadas y vidrios -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/limpieza-vidrios.mp4"
+             data-service="Limpieza de fachadas y vidrios">
+          <div class="service-icon">🪟</div>
+          <h3 class="service-title">Limpieza de fachadas y vidrios</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Cristales impecables en edificios, hoteles y torres de gran altura.</p>
+        </div>
+
+        <!-- 2. Pintura exterior -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/pintura.mp4"
+             data-service="Pintura exterior">
+          <div class="service-icon">🖌️</div>
+          <h3 class="service-title">Pintura exterior</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Acabados profesionales y duraderos en fachadas y superficies exteriores.</p>
+        </div>
+
+        <!-- 3. Reparación y sellado -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/reparacion.mp4"
+             data-service="Reparación y sellado">
+          <div class="service-icon">🔧</div>
+          <h3 class="service-title">Reparación y sellado</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Sellado de juntas, reparación de fisuras y restauración estructural.</p>
+        </div>
+
+        <!-- 4. Colocación de carteles y lonas -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/carteles.mp4"
+             data-service="Colocación de carteles y lonas">
+          <div class="service-icon">📢</div>
+          <h3 class="service-title">Colocación de carteles y lonas</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Instalación segura de señalética, banners y lonas publicitarias en altura.</p>
+        </div>
+
+        <!-- 5. Instalación de líneas de vida -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/lineas-vida.mp4"
+             data-service="Instalación de líneas de vida">
+          <div class="service-icon">🛡️</div>
+          <h3 class="service-title">Instalación de líneas de vida</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Sistemas de seguridad permanente para trabajos en altura con certificación.</p>
+        </div>
+
+        <!-- 6. Retiro de partes peligrosas -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/retiro.mp4"
+             data-service="Retiro de partes peligrosas">
+          <div class="service-icon">⚠️</div>
+          <h3 class="service-title">Retiro de partes peligrosas</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Remoción controlada de elementos sueltos, antenas y estructuras en riesgo.</p>
+        </div>
+
+        <!-- 7. Mantenimiento de iluminación -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/iluminacion.mp4"
+             data-service="Mantenimiento de iluminación">
+          <div class="service-icon">💡</div>
+          <h3 class="service-title">Mantenimiento de iluminación</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Reemplazo y mantenimiento de luminarias en fachadas y espacios elevados.</p>
+        </div>
+
+        <!-- 8. Limpieza de obras en terminación -->
+        <div class="service-card glass-card reveal" tabindex="0" role="button"
+             data-video="assets/video/services/obras.mp4"
+             data-service="Limpieza de obras en terminación">
+          <div class="service-icon">🏗️</div>
+          <h3 class="service-title">Limpieza de obras en terminación</h3>
+          <div class="service-play" aria-label="Ver video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          </div>
+          <p class="service-desc">Limpieza integral post-obra para entrega impecable de proyectos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICE VIDEO MODAL ═══ -->
+  <div class="service-modal" data-service-modal role="dialog" aria-modal="true" aria-label="Video del servicio" aria-hidden="true">
+    <div class="service-modal-backdrop" data-modal-close></div>
+    <div class="service-modal-frame">
+      <button class="service-modal-close" data-modal-close aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="service-modal-video-wrap">
+        <video class="service-modal-video" data-modal-video muted playsinline></video>
+        <div class="service-modal-loader" data-modal-loader>
+          <div class="service-modal-spinner"></div>
+        </div>
+      </div>
+      <div class="service-modal-info">
+        <p class="service-modal-eyebrow">Servicio RENOVA</p>
+        <h3 class="service-modal-title" data-modal-title></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ POR QUÉ ELEGIRNOS ═══ -->
+  <section id="porque" class="features section">
+    <div class="section-container">
+      <div class="features-inner">
+        <div class="features-text">
+          <div class="section-header reveal">
+            <p class="section-eyebrow">Por qué elegirnos</p>
+            <h2 class="section-title">Compromiso con la <em>excelencia</em></h2>
+            <p class="section-sub">Cada detalle cuenta cuando se trabaja en altura. Nuestro equipo combina experiencia, tecnología y protocolos de seguridad de primer nivel.</p>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Gran capacidad operativa</strong>
+              <span>Equipos y logística para proyectos de cualquier escala.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Rapidez de ejecución</strong>
+              <span>Cumplimos plazos sin comprometer la calidad.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Técnicas y herramientas avanzadas</strong>
+              <span>Tecnología de última generación para cada servicio.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Equipo altamente capacitado</strong>
+              <span>Personal certificado con formación continua en seguridad.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Máxima seguridad</strong>
+              <span>Protocolos rigurosos y equipamiento homologado.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Atención personalizada</strong>
+              <span>Cada cliente recibe un plan a medida de sus necesidades.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Amplia disponibilidad horaria</strong>
+              <span>Nos adaptamos a los horarios de tu edificio u obra.</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="feature-text">
+              <strong>Resultados profesionales garantizados</strong>
+              <span>Nos comprometemos con la satisfacción total del cliente.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOBRE NOSOTROS ═══ -->
+  <section id="nosotros" class="about section">
+    <div class="section-container">
+      <div class="about-inner">
+        <div class="about-images reveal">
+          <div class="about-img-main">
+            <img src="assets/img/ceo-traje.jpg" alt="Chionaicci Trejo Rincones — Fundador y CEO de RENOVA" loading="lazy">
+          </div>
+          <div class="about-img-accent glass-card">
+            <img src="assets/img/galeria-3.jpg" alt="Equipo RENOVA trabajando en altura" loading="lazy">
+          </div>
+          <div class="about-stat glass-card">
+            <span class="about-stat-num"><span data-count-to="100">0</span><em>+</em></span>
+            <span class="about-stat-label">Proyectos</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <div class="section-header">
+            <p class="section-eyebrow">Sobre nosotros</p>
+            <h2 class="section-title">Profesionalismo a <em>cada metro</em></h2>
+          </div>
+
+          <p class="about-text">
+            <strong>RENOVA</strong> es una empresa uruguaya especializada en limpieza y mantenimiento en altura, ubicada en Maldonado, Punta del Este. Trabajamos con edificios, hoteles, empresas, desarrollos inmobiliarios y obras de construcción que requieren precisión, seguridad y resultados de alto nivel.
+          </p>
+          <p class="about-text">
+            Liderada por <strong>Chionaicci Trejo Rincones</strong>, nuestra misión es elevar los estándares del mantenimiento en altura con un enfoque profesional, seguro y orientado a resultados.
+          </p>
+
+          <div class="about-ceo">
+            <div class="about-ceo-avatar-img">
+              <img src="assets/img/ceo-traje.jpg" alt="Chionaicci Trejo Rincones — CEO" loading="lazy">
+            </div>
+            <div class="about-ceo-info">
+              <strong>Chionaicci Trejo Rincones</strong>
+              <span>Fundador &amp; CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALERÍA ═══ -->
+  <section id="galeria" class="gallery section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Nuestro trabajo</p>
+        <h2 class="section-title">Galería de <em>proyectos</em></h2>
+        <p class="section-sub">Resultados reales en edificios, hoteles y obras de Punta del Este.</p>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall reveal">
+        <img src="assets/img/galeria-1.jpg" alt="Trabajo en fachada de edificio" loading="lazy">
+        <div class="gallery-overlay"><span>Limpieza de fachada</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide reveal">
+        <img src="assets/img/galeria-2.jpg" alt="Equipo en acción" loading="lazy">
+        <div class="gallery-overlay"><span>Equipo profesional</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/img/galeria-3.jpg" alt="Trabajo en altura con arnés" loading="lazy">
+        <div class="gallery-overlay"><span>Seguridad garantizada</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/img/galeria-4.jpg" alt="Pintura exterior de edificio" loading="lazy">
+        <div class="gallery-overlay"><span>Pintura exterior</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide reveal">
+        <img src="assets/img/galeria-5.jpg" alt="Mantenimiento de vidrios" loading="lazy">
+        <div class="gallery-overlay"><span>Vidrios impecables</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/img/galeria-6.jpg" alt="Limpieza post-obra" loading="lazy">
+        <div class="gallery-overlay"><span>Limpieza post-obra</span></div>
+      </div>
+      <div class="gallery-item gallery-item--tall reveal">
+        <img src="assets/img/galeria-7.jpg" alt="Trabajo en torre" loading="lazy">
+        <div class="gallery-overlay"><span>Trabajos en torre</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/img/galeria-8.jpg" alt="Instalación de carteles" loading="lazy">
+        <div class="gallery-overlay"><span>Instalación en altura</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/img/galeria-11.jpg" alt="Trabajo de altura profesional" loading="lazy">
+        <div class="gallery-overlay"><span>Precisión en altura</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/img/galeria-12.jpg" alt="Equipo de trabajo RENOVA" loading="lazy">
+        <div class="gallery-overlay"><span>Equipo RENOVA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIOS ═══ -->
+  <section class="testimonials section">
+    <div class="testimonials-bg"></div>
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Testimonios</p>
+        <h2 class="section-title">Lo que dicen nuestros <em>clientes</em></h2>
+        <p class="section-sub">La confianza de quienes ya trabajaron con nosotros es nuestra mejor carta de presentación.</p>
+      </div>
+    </div>
+
+    <div class="testimonials-stage" data-testimonials>
+      <!-- Arrows -->
+      <button class="t-arrow t-arrow--prev" data-prev aria-label="Testimonio anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="t-arrow t-arrow--next" data-next aria-label="Siguiente testimonio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Track -->
+      <div class="testimonials-track" data-track>
+        <!-- Slide 1 -->
+        <div class="t-card" data-slide aria-hidden="false">
+          <div class="t-card-media">
+            <img src="assets/img/galeria-1.jpg" alt="Edificio en Punta del Este" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Edificio residencial</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">Excelente trabajo en la limpieza de vidrios de nuestro edificio. El equipo fue puntual, profesional y dejó todo impecable. Totalmente recomendados.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-name">María G.</span>
+                <span class="t-card-author-role">Administradora de edificio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="t-card" data-slide aria-hidden="true">
+          <div class="t-card-media">
+            <img src="assets/img/galeria-4.jpg" alt="Hotel en la costa" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Hotel</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">RENOVA nos solucionó la pintura exterior del hotel en tiempo récord. Muy buena coordinación y cero inconvenientes. Ya los contratamos nuevamente.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-name">Carlos R.</span>
+                <span class="t-card-author-role">Gerente de hotel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="t-card" data-slide aria-hidden="true">
+          <div class="t-card-media">
+            <img src="assets/img/galeria-12.jpg" alt="Obra en construcción" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Obra de construcción</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">La limpieza post-obra fue impresionante. Dejaron el edificio listo para la entrega en un día. Muy serios y responsables en todo momento.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-name">Fernando L.</span>
+                <span class="t-card-author-role">Director de obra</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="t-card" data-slide aria-hidden="true">
+          <div class="t-card-media">
+            <img src="assets/img/galeria-5.jpg" alt="Desarrollo inmobiliario" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Desarrollo inmobiliario</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">Contratamos a RENOVA para la limpieza de fachadas de tres torres nuevas. El resultado fue impecable y cumplieron con los tiempos acordados sin ningún problema.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-name">Andrea M.</span>
+                <span class="t-card-author-role">Gerente de proyecto inmobiliario</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="t-card" data-slide aria-hidden="true">
+          <div class="t-card-media">
+            <img src="assets/img/galeria-6.jpg" alt="Apartamento en Punta del Este" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Apartamento</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">Necesitábamos limpiar los vidrios de nuestro piso 14 y RENOVA lo resolvió con total profesionalismo. Puntuales, prolijos y con todas las medidas de seguridad.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-name">Lucía P.</span>
+                <span class="t-card-author-role">Propietaria de apartamento</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="t-card" data-slide aria-hidden="true">
+          <div class="t-card-media">
+            <img src="assets/img/galeria-7.jpg" alt="Empresa comercial" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Empresa</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">Llevan el mantenimiento integral de nuestra sede y cada intervención es rápida, coordinada y sin interrumpir nuestra operación diaria. Un equipo de confianza total.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-name">Roberto S.</span>
+                <span class="t-card-author-role">Director de operaciones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="t-pagination" role="tablist" aria-label="Testimonios">
+        <button class="t-dot is-active" data-dot role="tab" aria-selected="true" aria-label="Testimonio 1"></button>
+        <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 2"></button>
+        <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 3"></button>
+        <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 4"></button>
+        <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 5"></button>
+        <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 6"></button>
+      </div>
+
+      <!-- Counter -->
+      <div class="t-counter" aria-hidden="true">
+        <span data-current>01</span>
+        <span class="t-counter-divider">/</span>
+        <span data-total>06</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTORES / CLIENTES ═══ -->
+  <section id="sectores" class="sectors section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Sectores que atendemos</p>
+        <h2 class="section-title">Clientes en todos los <em>sectores</em></h2>
+      </div>
+
+      <div class="sectors-grid">
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+          <span>Empresas</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01"/></svg>
+          <span>Edificios residenciales</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M9 22v-3h6v3M8 6h8M8 10h8M8 14h4"/><circle cx="15" cy="14" r="1"/></svg>
+          <span>Hoteles</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/><path d="M9 21v-6h6v6M9 7h.01M15 7h.01M9 11h.01M15 11h.01"/></svg>
+          <span>Apartamentos</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18l-9-18z"/><path d="M12 3v18M3 21l9-9 9 9"/></svg>
+          <span>Casas</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01M2 10h20M4 18v2M20 18v2"/></svg>
+          <span>Obras en terminación</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V8l4-4h8l4 4v12"/><path d="M12 4v4M8 8h8M10 12h4M10 16h4"/></svg>
+          <span>Desarrollos inmobiliarios</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M15 13h3M15 17h3"/></svg>
+          <span>Fábricas</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/><rect x="5" y="2" width="14" height="19" rx="1"/></svg>
+          <span>Centros comerciales</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16"/><path d="M6 8h4v4H6zM14 8h4v4h-4zM2 20h20M10 16h4v4h-4"/></svg>
+          <span>Instituciones educativas</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-7 7 7v11"/><path d="M9 21v-6h6v6"/><circle cx="12" cy="13" r="1"/></svg>
+          <span>Condominios</span>
+        </div>
+        <div class="sector-badge glass-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>Depósitos y galpones</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ UBICACIÓN ═══ -->
+  <section id="ubicacion" class="location section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Ubicación</p>
+        <h2 class="section-title">Operamos en toda <em>Punta del Este</em></h2>
+      </div>
+
+      <div class="location-inner">
+        <div class="location-map reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52456.03!2d-54.97!3d-34.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9552f4c5c2c93c69%3A0x1e30157dfe7b5f32!2sMaldonado%2C%20Uruguay!5e0!3m2!1ses-419!2suy!4v1" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de RENOVA en Maldonado, Punta del Este"></iframe>
+        </div>
+
+        <div class="location-info glass-card reveal">
+          <div class="location-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Ubicación</strong>
+              <span>Maldonado, Punta del Este, Uruguay</span>
+            </div>
+          </div>
+          <div class="location-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <strong>Teléfono</strong>
+              <span><a href="tel:+59892588755">+598 92 588 755</a></span>
+            </div>
+          </div>
+          <div class="location-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:renova.alturauy@gmail.com">renova.alturauy@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="location-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lunes a sábado · Amplia disponibilidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA STRIP ═══ -->
+  <div class="cta-strip">
+    <div class="cta-strip-inner reveal">
+      <p class="cta-strip-eyebrow">¿Listo para empezar?</p>
+      <h2 class="cta-strip-title">Solicitá tu presupuesto <em>sin compromiso</em></h2>
+      <div class="cta-strip-actions">
+        <a href="#contacto" class="btn btn-pulse">
+          <span class="btn-shine"></span>
+          <span class="btn-pulse-label">Solicitar presupuesto</span>
+        </a>
+        <a href="https://wa.me/59892588755?text=Hola%20RENOVA%2C%20quiero%20solicitar%20un%20presupuesto." class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+          WhatsApp directo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACTO ═══ -->
+  <section id="contacto" class="contact section">
+    <div class="section-container">
+      <div class="contact-inner">
+        <div class="contact-header reveal">
+          <p class="section-eyebrow">Contacto</p>
+          <h2 class="contact-title">Hablemos de tu <em>proyecto</em></h2>
+          <p class="contact-sub">Completá el formulario o escribinos directo por WhatsApp. Respondemos en menos de 24 horas.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form glass-card reveal" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa (opcional)">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+598 ...">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio de interés *</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Seleccioná un servicio</option>
+                <option>Limpieza de fachadas y vidrios</option>
+                <option>Pintura exterior</option>
+                <option>Reparación y sellado</option>
+                <option>Colocación de carteles y lonas</option>
+                <option>Instalación de líneas de vida</option>
+                <option>Retiro de partes peligrosas</option>
+                <option>Mantenimiento de iluminación</option>
+                <option>Limpieza de obras en terminación</option>
+                <option>Otro / Consulta general</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos sobre tu proyecto..."></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+              <span class="btn-text">Enviar por WhatsApp</span>
+              <span class="btn-sending">Enviando…</span>
+              <span class="btn-sent">✓ Redirigiendo a WhatsApp</span>
+            </button>
+            <p class="form-privacy">Al enviar, serás redirigido a WhatsApp con tu mensaje pre-armado.</p>
+          </form>
+
+          <div class="contact-info reveal">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">Teléfono</span>
+                <a href="tel:+59892588755" class="contact-info-value">+598 92 588 755</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:renova.alturauy@gmail.com" class="contact-info-value">renova.alturauy@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">Ubicación</span>
+                <span class="contact-info-value">Maldonado, Punta del Este</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/59892588755?text=Hola%20RENOVA%2C%20quiero%20solicitar%20un%20presupuesto." class="btn-whatsapp-large" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Escribinos por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRABAJÁ CON NOSOTROS ═══ -->
+  <section class="join-us">
+    <div class="join-bg">
+      <img src="assets/img/galeria-2.jpg" alt="" loading="lazy">
+      <div class="join-bg-overlay"></div>
+    </div>
+    <div class="section-container">
+      <div class="join-inner">
+        <div class="join-content reveal">
+          <p class="section-eyebrow">Sumate al equipo</p>
+          <h2 class="section-title">Trabajá con <em>nosotros</em></h2>
+          <p class="join-lead">
+            Buscamos personas comprometidas, con ganas de crecer y dispuestas a trabajar en altura. Si tenés experiencia o querés formarte en el rubro, RENOVA es tu lugar.
+          </p>
+          <ul class="join-perks">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Capacitación continua
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Equipamiento de seguridad
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Buen ambiente de trabajo
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Oportunidades de crecimiento
+            </li>
+          </ul>
+          <div class="join-actions">
+            <button class="btn btn-primary" data-join-open>Postularme ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ JOIN MODAL ═══ -->
+  <div class="join-modal" data-join-modal role="dialog" aria-modal="true" aria-label="Formulario de postulación" aria-hidden="true">
+    <div class="join-modal-backdrop" data-join-close></div>
+    <div class="join-modal-frame">
+      <button class="join-modal-close" data-join-close aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="join-modal-head">
+        <p class="section-eyebrow">Postulación</p>
+        <h3 class="join-modal-title">Sumate al equipo RENOVA</h3>
+        <p class="join-modal-sub">Completá tus datos y elegí cómo enviarnos tu postulación.</p>
+      </div>
+
+      <form id="joinForm" class="join-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="join-nombre">Nombre completo *</label>
+            <input type="text" id="join-nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form-field">
+            <label for="join-edad">Edad</label>
+            <input type="number" id="join-edad" min="18" max="65" placeholder="Ej: 28">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="join-telefono">Teléfono *</label>
+            <input type="tel" id="join-telefono" required placeholder="+598 ...">
+          </div>
+          <div class="form-field">
+            <label for="join-email">Email *</label>
+            <input type="email" id="join-email" required placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="join-experiencia">Experiencia en trabajo en altura *</label>
+          <select id="join-experiencia" required>
+            <option value="" disabled selected>Seleccioná</option>
+            <option value="Sin experiencia">Sin experiencia (quiero formarme)</option>
+            <option value="Menos de 1 año">Menos de 1 año</option>
+            <option value="1-3 años">1 a 3 años</option>
+            <option value="Más de 3 años">Más de 3 años</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="join-mensaje">Mensaje adicional</label>
+          <textarea id="join-mensaje" rows="3" placeholder="Contanos sobre tu experiencia, disponibilidad, etc."></textarea>
+        </div>
+        <p class="join-form-note">Al enviar, se abrirá WhatsApp o tu correo con tu postulación pre-armada.</p>
+        <div class="join-form-actions">
+          <button type="button" class="btn btn-primary" data-join-submit="whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="width:16px;height:16px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Enviar por WhatsApp
+          </button>
+          <button type="button" class="btn btn-ghost" data-join-submit="email">
+            Enviar por Email
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo-wrap">
+            <img src="assets/img/logo-renova-dark.png" alt="RENOVA" class="footer-logo-img" loading="lazy">
+          </div>
+          <p class="footer-tagline">Limpieza y mantenimiento en altura profesional en Punta del Este, Uruguay.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegación del pie">
+          <div class="footer-nav-col">
+            <h4>Navegación</h4>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#galeria">Galería</a>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Servicios</h4>
+            <a href="#servicios">Limpieza de vidrios</a>
+            <a href="#servicios">Pintura exterior</a>
+            <a href="#servicios">Líneas de vida</a>
+            <a href="#servicios">Limpieza post-obra</a>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Contacto</h4>
+            <a href="tel:+59892588755">+598 92 588 755</a>
+            <a href="mailto:renova.alturauy@gmail.com">renova.alturauy@gmail.com</a>
+            <a href="#ubicacion">Maldonado, Uruguay</a>
+          </div>
+        </nav>
+
+        <div class="footer-social">
+          <h4>Redes</h4>
+          <div class="footer-social-links">
+            <a href="https://wa.me/59892588755" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            </a>
+            <a href="mailto:renova.alturauy@gmail.com" class="footer-social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 RENOVA — Limpieza y Mantenimiento en Altura. Todos los derechos reservados.</p>
+        <p>Maldonado, Punta del Este, Uruguay</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script defer src="lib/gsap.min.js?v=20260521"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20260521"></script>
+  <script defer src="main.js?v=20260521"></script>
+
+</body>
+</html>
