@@ -3439,3 +3439,78 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
   .sectors-arrow { display: none; }
   .sectors-scroll .sector-badge { flex: 0 0 clamp(120px, 42vw, 160px); }
 }
+
+/* ═══════════════════════════════════════════════════
+   LOCATION: telefonos con iconos phone+whatsapp
+════════════════════════════════════════════════════ */
+.location-phones {
+  width: 100%;
+}
+.location-phones > strong {
+  display: block;
+  margin-bottom: 0.65rem;
+}
+.phone-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 0.15rem 0.75rem;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(155, 186, 203, 0.10);
+}
+.phone-row:first-of-type { border-top: none; padding-top: 0.25rem; }
+.phone-row-label {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.phone-row-actions {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  gap: 0.45rem;
+  align-self: center;
+}
+.phone-row-number {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 0.92rem;
+  color: var(--cream-1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.phone-row-number:hover { color: var(--accent); }
+.phone-icon-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(36, 113, 163, 0.12);
+  border: 1px solid rgba(36, 113, 163, 0.35);
+  color: var(--cream-1);
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  text-decoration: none;
+}
+.phone-icon-btn svg { width: 16px; height: 16px; }
+.phone-icon-btn:hover {
+  background: rgba(36, 113, 163, 0.32);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.phone-icon-btn--wa {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: rgba(37, 211, 102, 0.45);
+  color: #25D366;
+}
+.phone-icon-btn--wa:hover {
+  background: rgba(37, 211, 102, 0.25);
+  border-color: #25D366;
+}
