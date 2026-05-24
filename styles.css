@@ -3371,8 +3371,30 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
 }
 
 /* ═══════════════════════════════════════════════════
-   SECTORS GRID (3 col mobile · 4 tablet · 6 desktop)
+   SECTORS — imagen única generada con IA
 ════════════════════════════════════════════════════ */
+.sectors-image-wrap {
+  margin-top: 2.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+  border: 1px solid rgba(30,207,207,0.18);
+  transition: transform 0.6s var(--ease-out), box-shadow 0.6s;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sectors-image-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 35px 100px rgba(30,207,207,0.25);
+}
+.sectors-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Grid antiguo (sin usar pero por si volvemos) */
 .sectors-scroll-wrap {
   position: relative;
   margin-top: 2.5rem;
