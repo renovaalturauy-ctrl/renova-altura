@@ -2083,7 +2083,7 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
   transition: transform .35s var(--ease-out), border-color .35s, box-shadow .35s;
 }
 
-/* Franja rápida que recorre el fondo en loop */
+/* Franja fina y lenta que recorre el fondo en loop */
 .nav-logo-sweep {
   position: absolute;
   inset: 0;
@@ -2092,20 +2092,20 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
   background:
     linear-gradient(115deg,
       transparent 0%,
-      transparent 38%,
-      rgba(36, 113, 163, 0.45) 47%,
-      rgba(155, 186, 203, 0.55) 50%,
-      rgba(36, 113, 163, 0.45) 53%,
-      transparent 62%,
+      transparent 44%,
+      rgba(36, 113, 163, 0.25) 48%,
+      rgba(155, 186, 203, 0.45) 50%,
+      rgba(36, 113, 163, 0.25) 52%,
+      transparent 56%,
       transparent 100%);
-  background-size: 250% 100%;
-  background-position: 200% 0;
-  animation: navLogoSweep 2.8s linear infinite;
+  background-size: 300% 100%;
+  background-position: 250% 0;
+  animation: navLogoSweep 5.5s linear infinite;
   mix-blend-mode: screen;
-  filter: blur(.5px);
+  filter: blur(.3px);
 }
 @keyframes navLogoSweep {
-  0%   { background-position: 200% 0; }
+  0%   { background-position: 250% 0; }
   100% { background-position: -100% 0; }
 }
 
