@@ -2138,10 +2138,11 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
 /* Footer: logo imagen */
 .footer-logo-wrap { margin-bottom: .75rem; }
 .footer-logo-img {
-  height: 60px; width: auto;
-  background: rgba(255,255,255,.95);
-  border-radius: 12px;
-  padding: 4px 10px;
+  height: 90px; width: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 
 /* About: avatar CEO foto circular */
