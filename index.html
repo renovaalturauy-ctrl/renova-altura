@@ -483,64 +483,53 @@
         <p class="section-sub">Profesionales comprometidos con la seguridad, la calidad y la excelencia en cada proyecto.</p>
       </div>
 
-      <div class="team-grid">
-        <!-- CEO -->
-        <div class="team-card team-card--lead glass-card reveal">
-          <div class="team-card-img">
-            <img src="assets/img/ceo-traje.jpg" alt="Chionaicci Trejo Rincones — CEO" loading="lazy">
-            <div class="team-card-overlay"></div>
+      <!-- Carrusel auto-scroll infinito -->
+      <div class="team-carousel-wrap">
+        <div class="team-carousel-track">
+          <!-- CEO -->
+          <div class="team-card team-card--lead glass-card">
+            <div class="team-card-img">
+              <img src="assets/img/ceo-traje.jpg" alt="Chionaicci Trejo Rincones — CEO" loading="lazy">
+              <div class="team-card-overlay"></div>
+            </div>
+            <div class="team-card-info">
+              <strong class="team-card-name">Chionaicci Trejo Rincones</strong>
+              <span class="team-card-role">Fundador &amp; CEO</span>
+            </div>
           </div>
-          <div class="team-card-info">
-            <strong class="team-card-name">Chionaicci Trejo Rincones</strong>
-            <span class="team-card-role">Fundador &amp; CEO</span>
+          <!-- Encargado -->
+          <div class="team-card glass-card">
+            <div class="team-card-img">
+              <img src="assets/img/andres-gonzalez.jpg" alt="Andrés González — Encargado" loading="lazy"
+                   onerror="this.src='assets/img/galeria-3.jpg'">
+              <div class="team-card-overlay"></div>
+            </div>
+            <div class="team-card-info">
+              <strong class="team-card-name">Andrés González</strong>
+              <span class="team-card-role">Encargado &amp; Supervisor</span>
+            </div>
           </div>
-        </div>
-
-        <!-- Miembro 2 -->
-        <div class="team-card glass-card reveal">
-          <div class="team-card-img">
-            <img src="assets/img/galeria-3.jpg" alt="Miembro del equipo RENOVA" loading="lazy">
-            <div class="team-card-overlay"></div>
+          <!-- Clones para loop infinito -->
+          <div class="team-card team-card--lead glass-card" aria-hidden="true">
+            <div class="team-card-img">
+              <img src="assets/img/ceo-traje.jpg" alt="" loading="lazy">
+              <div class="team-card-overlay"></div>
+            </div>
+            <div class="team-card-info">
+              <strong class="team-card-name">Chionaicci Trejo Rincones</strong>
+              <span class="team-card-role">Fundador &amp; CEO</span>
+            </div>
           </div>
-          <div class="team-card-info">
-            <strong class="team-card-name">Nombre del miembro</strong>
-            <span class="team-card-role">Técnico en altura</span>
-          </div>
-        </div>
-
-        <!-- Miembro 3 -->
-        <div class="team-card glass-card reveal">
-          <div class="team-card-img">
-            <img src="assets/img/galeria-11.jpg" alt="Miembro del equipo RENOVA" loading="lazy">
-            <div class="team-card-overlay"></div>
-          </div>
-          <div class="team-card-info">
-            <strong class="team-card-name">Nombre del miembro</strong>
-            <span class="team-card-role">Supervisor de seguridad</span>
-          </div>
-        </div>
-
-        <!-- Miembro 4 -->
-        <div class="team-card glass-card reveal">
-          <div class="team-card-img">
-            <img src="assets/img/galeria-2.jpg" alt="Miembro del equipo RENOVA" loading="lazy">
-            <div class="team-card-overlay"></div>
-          </div>
-          <div class="team-card-info">
-            <strong class="team-card-name">Nombre del miembro</strong>
-            <span class="team-card-role">Técnico especializado</span>
-          </div>
-        </div>
-
-        <!-- Miembro 5 -->
-        <div class="team-card glass-card reveal">
-          <div class="team-card-img">
-            <img src="assets/img/galeria-4.jpg" alt="Miembro del equipo RENOVA" loading="lazy">
-            <div class="team-card-overlay"></div>
-          </div>
-          <div class="team-card-info">
-            <strong class="team-card-name">Nombre del miembro</strong>
-            <span class="team-card-role">Coordinador de proyectos</span>
+          <div class="team-card glass-card" aria-hidden="true">
+            <div class="team-card-img">
+              <img src="assets/img/andres-gonzalez.jpg" alt="" loading="lazy"
+                   onerror="this.src='assets/img/galeria-3.jpg'">
+              <div class="team-card-overlay"></div>
+            </div>
+            <div class="team-card-info">
+              <strong class="team-card-name">Andrés González</strong>
+              <span class="team-card-role">Encargado &amp; Supervisor</span>
+            </div>
           </div>
         </div>
       </div>
@@ -557,47 +546,58 @@
       </div>
     </div>
 
-    <div class="gallery-grid">
-      <div class="gallery-item gallery-item--tall reveal">
-        <img src="assets/img/galeria-1.jpg" alt="Trabajo en fachada de edificio" loading="lazy">
-        <div class="gallery-overlay"><span>Limpieza de fachada</span></div>
+    <div class="gallery-carousel" data-gallery-carousel>
+      <button class="gal-arrow gal-arrow--prev" data-gal-prev aria-label="Imagen anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="gal-arrow gal-arrow--next" data-gal-next aria-label="Siguiente imagen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <div class="gal-track" data-gal-track>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-1.jpg" alt="Limpieza de fachada" loading="lazy">
+          <div class="gallery-overlay"><span>Limpieza de fachada</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-2.jpg" alt="Equipo profesional" loading="lazy">
+          <div class="gallery-overlay"><span>Equipo profesional</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-3.jpg" alt="Seguridad garantizada" loading="lazy">
+          <div class="gallery-overlay"><span>Seguridad garantizada</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-4.jpg" alt="Pintura exterior" loading="lazy">
+          <div class="gallery-overlay"><span>Pintura exterior</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-5.jpg" alt="Vidrios impecables" loading="lazy">
+          <div class="gallery-overlay"><span>Vidrios impecables</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-6.jpg" alt="Limpieza post-obra" loading="lazy">
+          <div class="gallery-overlay"><span>Limpieza post-obra</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-7.jpg" alt="Trabajos en torre" loading="lazy">
+          <div class="gallery-overlay"><span>Trabajos en torre</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-8.jpg" alt="Instalación en altura" loading="lazy">
+          <div class="gallery-overlay"><span>Instalación en altura</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-11.jpg" alt="Precisión en altura" loading="lazy">
+          <div class="gallery-overlay"><span>Precisión en altura</span></div>
+        </div>
+        <div class="gal-slide" data-gal-slide>
+          <img src="assets/img/galeria-12.jpg" alt="Equipo RENOVA" loading="lazy">
+          <div class="gallery-overlay"><span>Equipo RENOVA</span></div>
+        </div>
       </div>
-      <div class="gallery-item gallery-item--wide reveal">
-        <img src="assets/img/galeria-2.jpg" alt="Equipo en acción" loading="lazy">
-        <div class="gallery-overlay"><span>Equipo profesional</span></div>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="assets/img/galeria-3.jpg" alt="Trabajo en altura con arnés" loading="lazy">
-        <div class="gallery-overlay"><span>Seguridad garantizada</span></div>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="assets/img/galeria-4.jpg" alt="Pintura exterior de edificio" loading="lazy">
-        <div class="gallery-overlay"><span>Pintura exterior</span></div>
-      </div>
-      <div class="gallery-item gallery-item--wide reveal">
-        <img src="assets/img/galeria-5.jpg" alt="Mantenimiento de vidrios" loading="lazy">
-        <div class="gallery-overlay"><span>Vidrios impecables</span></div>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="assets/img/galeria-6.jpg" alt="Limpieza post-obra" loading="lazy">
-        <div class="gallery-overlay"><span>Limpieza post-obra</span></div>
-      </div>
-      <div class="gallery-item gallery-item--tall reveal">
-        <img src="assets/img/galeria-7.jpg" alt="Trabajo en torre" loading="lazy">
-        <div class="gallery-overlay"><span>Trabajos en torre</span></div>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="assets/img/galeria-8.jpg" alt="Instalación de carteles" loading="lazy">
-        <div class="gallery-overlay"><span>Instalación en altura</span></div>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="assets/img/galeria-11.jpg" alt="Trabajo de altura profesional" loading="lazy">
-        <div class="gallery-overlay"><span>Precisión en altura</span></div>
-      </div>
-      <div class="gallery-item reveal">
-        <img src="assets/img/galeria-12.jpg" alt="Equipo de trabajo RENOVA" loading="lazy">
-        <div class="gallery-overlay"><span>Equipo RENOVA</span></div>
-      </div>
+
+      <div class="gal-dots" data-gal-dots></div>
     </div>
   </section>
 
@@ -819,55 +819,63 @@
         <h2 class="section-title">Clientes en todos los <em>sectores</em></h2>
       </div>
 
-      <div class="sectors-grid">
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
-          <span>Empresas</span>
+      <div class="sectors-scroll-wrap">
+        <button class="sectors-arrow sectors-arrow--prev" data-sectors-prev aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="sectors-scroll" data-sectors-scroll>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+            <span>Empresas</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01"/></svg>
+            <span>Edificios residenciales</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M9 22v-3h6v3M8 6h8M8 10h8M8 14h4"/><circle cx="15" cy="14" r="1"/></svg>
+            <span>Hoteles</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/><path d="M9 21v-6h6v6M9 7h.01M15 7h.01M9 11h.01M15 11h.01"/></svg>
+            <span>Apartamentos</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18l-9-18z"/><path d="M12 3v18M3 21l9-9 9 9"/></svg>
+            <span>Casas</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01M2 10h20M4 18v2M20 18v2"/></svg>
+            <span>Obras en terminación</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V8l4-4h8l4 4v12"/><path d="M12 4v4M8 8h8M10 12h4M10 16h4"/></svg>
+            <span>Desarrollos inmobiliarios</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M15 13h3M15 17h3"/></svg>
+            <span>Fábricas</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/><rect x="5" y="2" width="14" height="19" rx="1"/></svg>
+            <span>Centros comerciales</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16"/><path d="M6 8h4v4H6zM14 8h4v4h-4zM2 20h20M10 16h4v4h-4"/></svg>
+            <span>Instituciones educativas</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-7 7 7v11"/><path d="M9 21v-6h6v6"/><circle cx="12" cy="13" r="1"/></svg>
+            <span>Condominios</span>
+          </div>
+          <div class="sector-badge glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Depósitos y galpones</span>
+          </div>
         </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01"/></svg>
-          <span>Edificios residenciales</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M9 22v-3h6v3M8 6h8M8 10h8M8 14h4"/><circle cx="15" cy="14" r="1"/></svg>
-          <span>Hoteles</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/><path d="M9 21v-6h6v6M9 7h.01M15 7h.01M9 11h.01M15 11h.01"/></svg>
-          <span>Apartamentos</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18l-9-18z"/><path d="M12 3v18M3 21l9-9 9 9"/></svg>
-          <span>Casas</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01M2 10h20M4 18v2M20 18v2"/></svg>
-          <span>Obras en terminación</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V8l4-4h8l4 4v12"/><path d="M12 4v4M8 8h8M10 12h4M10 16h4"/></svg>
-          <span>Desarrollos inmobiliarios</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M15 13h3M15 17h3"/></svg>
-          <span>Fábricas</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/><rect x="5" y="2" width="14" height="19" rx="1"/></svg>
-          <span>Centros comerciales</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16"/><path d="M6 8h4v4H6zM14 8h4v4h-4zM2 20h20M10 16h4v4h-4"/></svg>
-          <span>Instituciones educativas</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-7 7 7v11"/><path d="M9 21v-6h6v6"/><circle cx="12" cy="13" r="1"/></svg>
-          <span>Condominios</span>
-        </div>
-        <div class="sector-badge glass-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          <span>Depósitos y galpones</span>
-        </div>
+        <button class="sectors-arrow sectors-arrow--next" data-sectors-next aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -1001,8 +1009,17 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <span class="contact-info-label">Teléfono</span>
+                <span class="contact-info-label">Chionaicci Trejo · CEO</span>
                 <a href="tel:+59892588755" class="contact-info-value">+598 92 588 755</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">Andrés González · Encargado</span>
+                <a href="tel:+59895688436" class="contact-info-value">+598 95 688 436</a>
               </div>
             </div>
             <div class="contact-info-item">

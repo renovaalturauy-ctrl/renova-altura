@@ -39,7 +39,7 @@
     var W = window.innerWidth;
     var H = window.innerHeight;
     // climber top = -200px; rope crece hasta que el personaje quede ~50vh
-    var ropeTarget = Math.min(H * 0.46 + 200, 650);
+    var ropeTarget = Math.min(H * 0.75 + 200, 950); // personaje baja al 75% de pantalla, bajo el logo
 
     /* ── Burbujas ─────────────────────────────── */
     function spawnBubble(x, y) {
@@ -818,6 +818,70 @@
   /* ──────────────────────────────────────────
      BOOT
   ────────────────────────────────────────── */
+  /* ─────────────────────────────────────────────────────────────
+     GALLERY CAROUSEL
+  ────────────────────────────────────────── */
+  function initGalleryCarousel() {
+    var wrap  = document.querySelector("[data-gallery-carousel]");
+    if (!wrap) return;
+    var track = wrap.querySelector("[data-gal-track]");
+    var slides = wrap.querySelectorAll("[data-gal-slide]");
+    var prevBtn = wrap.querySelector("[data-gal-prev]");
+    var nextBtn = wrap.querySelector("[data-gal-next]");
+    var dotsWrap = wrap.querySelector("[data-gal-dots]");
+    var n = slides.length, cur = 0, timer;
+
+    // Build dots
+    slides.forEach(function(_, i) {
+      var d = document.createElement("button");
+      d.className = "gal-dot" + (i === 0 ? " is-active" : "");
+      d.setAttribute("aria-label", "Imagen " + (i + 1));
+      d.addEventListener("click", function() { goTo(i); });
+      dotsWrap.appendChild(d);
+    });
+
+    function goTo(idx) {
+      cur = (idx + n) % n;
+      track.style.transform = "translateX(-" + (cur * 100) + "%)";
+      wrap.querySelectorAll(".gal-dot").forEach(function(d, i) {
+        d.classList.toggle("is-active", i === cur);
+      });
+    }
+    function next() { goTo(cur + 1); }
+    function prev() { goTo(cur - 1); }
+    function startAuto() { timer = setInterval(next, 4000); }
+    function stopAuto()  { clearInterval(timer); }
+
+    nextBtn.addEventListener("click", function() { stopAuto(); next(); startAuto(); });
+    prevBtn.addEventListener("click", function() { stopAuto(); prev(); startAuto(); });
+    wrap.addEventListener("mouseenter", stopAuto);
+    wrap.addEventListener("mouseleave", startAuto);
+
+    // Touch swipe
+    var tx = 0;
+    track.addEventListener("touchstart", function(e) { tx = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener("touchend", function(e) {
+      var dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 40) { stopAuto(); dx < 0 ? next() : prev(); startAuto(); }
+    }, { passive: true });
+
+    startAuto();
+  }
+
+  /* ─────────────────────────────────────────────────────────────
+     SECTORS SCROLL
+  ────────────────────────────────────────── */
+  function initSectorsScroll() {
+    var wrap   = document.querySelector("[data-sectors-scroll]");
+    var prev   = document.querySelector("[data-sectors-prev]");
+    var next   = document.querySelector("[data-sectors-next]");
+    if (!wrap) return;
+    var step = wrap.querySelector(".sector-badge");
+    var stepW = step ? step.offsetWidth + 16 : 200;
+    if (prev) prev.addEventListener("click", function() { wrap.scrollBy({ left: -stepW * 2, behavior: "smooth" }); });
+    if (next) next.addEventListener("click", function() { wrap.scrollBy({ left:  stepW * 2, behavior: "smooth" }); });
+  }
+
   function boot() {
     safe(initIntro,          "intro");
     safe(initCursor,         "cursor");
@@ -832,6 +896,8 @@
     safe(initServiceLightbox,"serviceLightbox");
     safe(initJoinModal,      "joinModal");
     safe(initMagneticButtons,"magneticButtons");
+    safe(initGalleryCarousel,"galleryCarousel");
+    safe(initSectorsScroll,  "sectorsScroll");
 
     if (window.gsap && window.ScrollTrigger) {
       try { gsap.registerPlugin(ScrollTrigger); } catch (_) {}
