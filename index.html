@@ -483,13 +483,13 @@
         <p class="section-sub">Profesionales comprometidos con la seguridad, la calidad y la excelencia en cada proyecto.</p>
       </div>
 
-      <!-- Equipo estático centrado -->
-      <div class="team-static reveal">
+      <!-- Equipo estático centrado — solo nombres, sin fotos -->
+      <div class="team-static team-static--names reveal">
         <!-- CEO -->
         <div class="team-card team-card--lead glass-card">
-          <div class="team-card-img">
-            <img src="assets/img/ceo-traje.jpg" alt="Chionaicci Trejo Rincones — CEO" loading="lazy">
-            <div class="team-card-overlay"></div>
+          <div class="team-card-monogram" aria-hidden="true">
+            <span class="team-card-monogram-letters">CT</span>
+            <span class="team-card-monogram-bar"></span>
           </div>
           <div class="team-card-info">
             <strong class="team-card-name">Chionaicci Trejo Rincones</strong>
@@ -498,10 +498,9 @@
         </div>
         <!-- Coordinador -->
         <div class="team-card glass-card">
-          <div class="team-card-img">
-            <img src="assets/img/andres-gonzalez.jpg" alt="Andrés González — Coordinador de Servicios" loading="lazy"
-                 onerror="this.src='assets/img/galeria-3.jpg'">
-            <div class="team-card-overlay"></div>
+          <div class="team-card-monogram" aria-hidden="true">
+            <span class="team-card-monogram-letters">AG</span>
+            <span class="team-card-monogram-bar"></span>
           </div>
           <div class="team-card-info">
             <strong class="team-card-name">Andrés González</strong>
@@ -599,13 +598,13 @@
 
       <!-- Track -->
       <div class="testimonials-track" data-track>
-        <!-- Slide 1 -->
+        <!-- Slide 1 — Miami Boulevard -->
         <div class="t-card" data-slide aria-hidden="false">
           <div class="t-card-media">
-            <img src="assets/img/galeria-1.jpg" alt="Edificio en Punta del Este" loading="lazy">
+            <img src="assets/img/testimonio-miami.jpg" alt="Miami Boulevard — Punta del Este" loading="lazy">
             <div class="t-card-media-overlay"></div>
             <div class="t-card-meta-floating">
-              <span class="t-card-tag">Edificio residencial</span>
+              <span class="t-card-tag">Miami Boulevard</span>
             </div>
           </div>
           <div class="t-card-body">
@@ -620,25 +619,24 @@
             </div>
             <div class="t-card-author">
               <div class="t-card-author-text">
-                <span class="t-card-author-name">María G.</span>
-                <span class="t-card-author-role">Administradora de edificio</span>
+                <span class="t-card-author-role">Administradora</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
+        <!-- Slide 2 — Fendi Chateau -->
         <div class="t-card" data-slide aria-hidden="true">
           <div class="t-card-media">
-            <img src="assets/img/galeria-4.jpg" alt="Hotel en la costa" loading="lazy">
+            <img src="assets/img/testimonio-fendi.jpg" alt="Fendi Chateau — Punta del Este" loading="lazy">
             <div class="t-card-media-overlay"></div>
             <div class="t-card-meta-floating">
-              <span class="t-card-tag">Hotel</span>
+              <span class="t-card-tag">Fendi Chateau</span>
             </div>
           </div>
           <div class="t-card-body">
             <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
-            <blockquote class="t-card-quote">RENOVA nos solucionó la pintura exterior del hotel en tiempo récord. Muy buena coordinación y cero inconvenientes. Ya los contratamos nuevamente.</blockquote>
+            <blockquote class="t-card-quote">Contratamos a RENOVA para la limpieza de fachadas de dos torres nuevas. El resultado fue impecable y cumplieron con los tiempos acordados sin ningún problema.</blockquote>
             <div class="t-card-rating">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
@@ -648,81 +646,24 @@
             </div>
             <div class="t-card-author">
               <div class="t-card-author-text">
-                <span class="t-card-author-name">Carlos R.</span>
-                <span class="t-card-author-role">Gerente de hotel</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="t-card" data-slide aria-hidden="true">
-          <div class="t-card-media">
-            <img src="assets/img/galeria-12.jpg" alt="Obra en construcción" loading="lazy">
-            <div class="t-card-media-overlay"></div>
-            <div class="t-card-meta-floating">
-              <span class="t-card-tag">Obra de construcción</span>
-            </div>
-          </div>
-          <div class="t-card-body">
-            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
-            <blockquote class="t-card-quote">La limpieza post-obra fue impresionante. Dejaron el edificio listo para la entrega en un día. Muy serios y responsables en todo momento.</blockquote>
-            <div class="t-card-rating">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-            </div>
-            <div class="t-card-author">
-              <div class="t-card-author-text">
-                <span class="t-card-author-name">Fernando L.</span>
-                <span class="t-card-author-role">Director de obra</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="t-card" data-slide aria-hidden="true">
-          <div class="t-card-media">
-            <img src="assets/img/galeria-5.jpg" alt="Desarrollo inmobiliario" loading="lazy">
-            <div class="t-card-media-overlay"></div>
-            <div class="t-card-meta-floating">
-              <span class="t-card-tag">Desarrollo inmobiliario</span>
-            </div>
-          </div>
-          <div class="t-card-body">
-            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
-            <blockquote class="t-card-quote">Contratamos a RENOVA para la limpieza de fachadas de tres torres nuevas. El resultado fue impecable y cumplieron con los tiempos acordados sin ningún problema.</blockquote>
-            <div class="t-card-rating">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-            </div>
-            <div class="t-card-author">
-              <div class="t-card-author-text">
-                <span class="t-card-author-name">Andrea M.</span>
                 <span class="t-card-author-role">Gerente de proyecto inmobiliario</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Slide 5 -->
+        <!-- Slide 3 — The Colette -->
         <div class="t-card" data-slide aria-hidden="true">
           <div class="t-card-media">
-            <img src="assets/img/galeria-6.jpg" alt="Apartamento en Punta del Este" loading="lazy">
+            <img src="assets/img/testimonio-colette.jpg" alt="The Colette — Punta del Este" loading="lazy">
             <div class="t-card-media-overlay"></div>
             <div class="t-card-meta-floating">
-              <span class="t-card-tag">Apartamento</span>
+              <span class="t-card-tag">The Colette</span>
             </div>
           </div>
           <div class="t-card-body">
             <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
-            <blockquote class="t-card-quote">Necesitábamos limpiar los vidrios de nuestro piso 14 y RENOVA lo resolvió con total profesionalismo. Puntuales, prolijos y con todas las medidas de seguridad.</blockquote>
+            <blockquote class="t-card-quote">Necesitábamos limpiar los vidrios de nuestro apartamento frente al mar y RENOVA lo resolvió con total profesionalismo. Puntuales, prolijos y con todas las medidas de seguridad.</blockquote>
             <div class="t-card-rating">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
@@ -732,20 +673,19 @@
             </div>
             <div class="t-card-author">
               <div class="t-card-author-text">
-                <span class="t-card-author-name">Lucía P.</span>
-                <span class="t-card-author-role">Propietaria de apartamento</span>
+                <span class="t-card-author-role">Propietario</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Slide 6 -->
+        <!-- Slide 4 — WTC Tower -->
         <div class="t-card" data-slide aria-hidden="true">
           <div class="t-card-media">
-            <img src="assets/img/galeria-7.jpg" alt="Empresa comercial" loading="lazy">
+            <img src="assets/img/testimonio-wtc.jpg" alt="WTC Tower — Punta del Este" loading="lazy">
             <div class="t-card-media-overlay"></div>
             <div class="t-card-meta-floating">
-              <span class="t-card-tag">Empresa</span>
+              <span class="t-card-tag">WTC Tower</span>
             </div>
           </div>
           <div class="t-card-body">
@@ -760,8 +700,34 @@
             </div>
             <div class="t-card-author">
               <div class="t-card-author-text">
-                <span class="t-card-author-name">Roberto S.</span>
                 <span class="t-card-author-role">Director de operaciones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 — Trump Tower Punta del Este -->
+        <div class="t-card" data-slide aria-hidden="true">
+          <div class="t-card-media">
+            <img src="assets/img/testimonio-trump.jpg" alt="Trump Tower Punta del Este" loading="lazy">
+            <div class="t-card-media-overlay"></div>
+            <div class="t-card-meta-floating">
+              <span class="t-card-tag">Trump Tower</span>
+            </div>
+          </div>
+          <div class="t-card-body">
+            <svg class="t-quote-icon" viewBox="0 0 48 48" fill="currentColor"><path d="M14 32c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6zm20 0c-3.3 0-6-2.7-6-6v-2c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h2c3.3 0 6 2.7 6 6s-2.7 6-6 6z"/></svg>
+            <blockquote class="t-card-quote">El servicio en nuestro complejo de torres es excepcional. Coordinación impecable con la administración, protocolos de seguridad estrictos y resultados que mantienen la calidad premium que exigen nuestros residentes.</blockquote>
+            <div class="t-card-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <div class="t-card-author">
+              <div class="t-card-author-text">
+                <span class="t-card-author-role">Gerencia del complejo</span>
               </div>
             </div>
           </div>
@@ -775,7 +741,6 @@
         <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 3"></button>
         <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 4"></button>
         <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 5"></button>
-        <button class="t-dot" data-dot role="tab" aria-selected="false" aria-label="Testimonio 6"></button>
       </div>
 
       <!-- Counter -->
@@ -1137,6 +1102,12 @@
           <div class="footer-social-links">
             <a href="https://wa.me/59892588755" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/renova.alturauy/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61590498955363" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
             </a>
             <a href="mailto:renova.alturauy@gmail.com" class="footer-social-link" aria-label="Email">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>

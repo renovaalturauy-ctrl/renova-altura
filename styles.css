@@ -1150,23 +1150,23 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  /* Gradiente sólido más claro para que resalte el texto */
+  /* Grises carbón neutros — sin tinte azul, para que el blanco resalte */
   background: linear-gradient(
     135deg,
-    #2F3D52 0%,
-    #3A4A62 35%,
-    #455872 55%,
-    #364660 80%,
-    #2A3648 100%);
+    #1C2026 0%,
+    #262B33 35%,
+    #2D333C 55%,
+    #232830 80%,
+    #1A1E24 100%);
 }
-/* Overlay sutil — destellos azul acero radiales en movimiento */
+/* Overlay sutil — destellos accent muy tenues en movimiento */
 .features::before {
   content: '';
   position: absolute;
   inset: -5%;
   background:
-    radial-gradient(ellipse 50% 40% at 20% 30%, rgba(36, 113, 163, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 85% 70%, rgba(155, 186, 203, 0.10) 0%, transparent 65%);
+    radial-gradient(ellipse 50% 40% at 20% 30%, rgba(36, 113, 163, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 70%, rgba(255, 255, 255, 0.04) 0%, transparent 65%);
   pointer-events: none;
   z-index: 1;
   animation: featuresGlow 14s ease-in-out infinite alternate;
@@ -1206,54 +1206,60 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
 .features-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
+  gap: 1rem;
 }
 
 .feature-item {
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
-  padding: 1.4rem .75rem;
-  border-bottom: 1px solid var(--line);
-  border-radius: 10px;
-  transition: padding-left .3s var(--ease-out), background .3s;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.015) 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+  transition: transform .35s var(--ease-out), border-color .35s, background .35s, box-shadow .35s;
 }
-.feature-item:last-child { border-bottom: none; }
+.feature-item:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
 .feature-item:hover {
-  padding-left: 1.25rem;
-  background: rgba(27, 79, 114, 0.07);
+  transform: translateY(-2px);
+  border-color: rgba(36, 113, 163, 0.55);
+  background: linear-gradient(180deg, rgba(36,113,163,0.10) 0%, rgba(255,255,255,0.02) 100%);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35), 0 0 0 1px rgba(36,113,163,0.15);
 }
 
 .feature-icon-wrap {
   flex-shrink: 0;
   width: 44px; height: 44px;
   border-radius: 12px;
-  background: rgba(27, 79, 114, 0.22);
-  border: 1px solid rgba(36, 113, 163, 0.4);
+  background: rgba(27, 79, 114, 0.30);
+  border: 1px solid rgba(36, 113, 163, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 16px rgba(27,79,114,.2);
+  box-shadow: 0 0 16px rgba(27,79,114,.25);
 }
 .feature-icon-wrap svg {
   width: 20px; height: 20px;
-  color: var(--accent-light);
+  color: #B8D4E8;
 }
 
 .feature-text {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: .3rem;
 }
 .feature-text strong {
   font-family: var(--display);
-  font-size: .95rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: var(--cream);
+  color: #FFFFFF;
+  letter-spacing: 0.01em;
 }
 .feature-text span {
-  font-size: .85rem;
-  color: var(--cream-2);
+  font-size: .88rem;
+  color: #C8D2DC;
+  line-height: 1.55;
 }
 
 /* =============================================================
@@ -1729,7 +1735,7 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
   flex-shrink: 0;
   margin-top: .15rem;
 }
-.location-item div {
+.location-item > div {
   display: flex;
   flex-direction: column;
   gap: .2rem;
@@ -3289,6 +3295,124 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
 }
 .team-static .team-card--lead .team-card-name {
   color: var(--accent);
+}
+
+/* ═══════════════════════════════════════════════════
+   TEAM SIN FOTOS — variante "names only" con monograma
+   Premium minimalista: iniciales + nombre + rol
+════════════════════════════════════════════════════ */
+.team-static--names .team-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding: 2.6rem 1.8rem 2.2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  background:
+    radial-gradient(120% 90% at 50% 0%, var(--accent-glow) 0%, transparent 55%),
+    var(--bg-card);
+  overflow: hidden;
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s, border-color 0.4s;
+}
+.team-static--names .team-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 50%;
+  width: 64px; height: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--accent-light), transparent);
+  opacity: 0.7;
+}
+.team-static--names .team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(27, 79, 114, 0.35);
+  border-color: rgba(36, 113, 163, 0.55);
+}
+
+/* Monograma con iniciales */
+.team-card-monogram {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.team-card-monogram-letters {
+  font-family: var(--display);
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--cream);
+  background: linear-gradient(135deg, var(--cream) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.5s var(--ease-out), letter-spacing 0.5s var(--ease-out);
+}
+.team-card-monogram-bar {
+  display: block;
+  width: 32px; height: 2px;
+  margin-top: 0.75rem;
+  background: var(--accent-light);
+  opacity: 0.55;
+  transition: width 0.4s var(--ease-out), opacity 0.4s;
+}
+.team-static--names .team-card:hover .team-card-monogram-letters {
+  transform: scale(1.06);
+  letter-spacing: 0.08em;
+}
+.team-static--names .team-card:hover .team-card-monogram-bar {
+  width: 56px;
+  opacity: 1;
+}
+
+/* Texto */
+.team-static--names .team-card-info {
+  padding: 0;
+  border-top: none;
+  background: transparent;
+  text-align: center;
+  width: 100%;
+}
+.team-static--names .team-card-name {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.55rem;
+}
+.team-static--names .team-card-role {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Lead card: más jerarquía */
+.team-static--names .team-card--lead {
+  border-color: rgba(36, 113, 163, 0.45);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(36, 113, 163, 0.28) 0%, transparent 55%),
+    var(--bg-card);
+}
+.team-static--names .team-card--lead::before {
+  opacity: 1;
+  width: 92px;
+  height: 2px;
+}
+.team-static--names .team-card--lead .team-card-monogram-letters {
+  font-size: 3.6rem;
+}
+.team-static--names .team-card--lead .team-card-name {
+  color: var(--cream);
 }
 
 /* ═══════════════════════════════════════════════════
