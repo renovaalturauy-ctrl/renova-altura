@@ -3298,7 +3298,82 @@ body.cursor-hover .cursor-ring { width: 60px; height: 60px; border-color: var(--
 }
 
 /* ═══════════════════════════════════════════════════
-   TEAM SIN FOTOS — variante "names only" con monograma
+   TEAM CHIPS — variante compacta v3
+   Recuadros finos, fondo claro, texto oscuro negrita
+════════════════════════════════════════════════════ */
+.team-static--chips {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  max-width: 920px;
+  margin: 2.5rem auto 0;
+}
+@media (min-width: 640px) {
+  .team-static--chips { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+}
+
+.team-chip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EAF3FA 100%);
+  border: 1px solid rgba(36, 113, 163, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255,255,255,0.8);
+  text-align: center;
+  overflow: hidden;
+  transition: transform .35s var(--ease-out), box-shadow .35s, border-color .35s;
+}
+.team-chip::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
+}
+.team-chip:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 22px rgba(27, 79, 114, 0.35), inset 0 1px 0 rgba(255,255,255,0.8);
+}
+.team-chip-name {
+  display: block;
+  font-family: var(--display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0B2E4A;
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+}
+.team-chip-role {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Lead: más jerarquía (la barra arriba más gruesa) */
+.team-chip--lead::before {
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-light), #4A8FBE, var(--accent-light));
+}
+.team-chip--lead .team-chip-name { color: #0A2540; }
+
+/* "+ Personal capacitado": variante decorativa con borde discontinuo */
+.team-chip--more {
+  background: linear-gradient(180deg, #F4F8FC 0%, #E0EAF3 100%);
+  border-style: dashed;
+}
+.team-chip--more::before { opacity: 0.65; }
+
+/* ═══════════════════════════════════════════════════
+   TEAM SIN FOTOS — variante "names only" con monograma (legacy)
    Premium minimalista: iniciales + nombre + rol
 ════════════════════════════════════════════════════ */
 .team-static--names .team-card {
