@@ -902,8 +902,35 @@
     });
   }
 
+  /* ─────────────────────────────────────────────────────────────
+     COOKIE BANNER (solo cookies técnicas)
+  ────────────────────────────────────────── */
+  function initCookieBanner() {
+    var banner = document.getElementById("cookieBanner");
+    if (!banner) return;
+    var KEY = "renova_cookie_ok";
+    var stored;
+    try { stored = window.localStorage.getItem(KEY); } catch (_) { stored = "1"; }
+    if (stored === "1") return;
+
+    banner.hidden = false;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { banner.classList.add("is-visible"); });
+    });
+
+    var btn = document.getElementById("cookieAccept");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        try { window.localStorage.setItem(KEY, "1"); } catch (_) {}
+        banner.classList.remove("is-visible");
+        window.setTimeout(function () { banner.hidden = true; }, 500);
+      });
+    }
+  }
+
   function boot() {
     safe(initEmailReveal,    "email");
+    safe(initCookieBanner,   "cookieBanner");
     safe(initIntro,          "intro");
     safe(initCursor,         "cursor");
     safe(initNav,            "nav");
