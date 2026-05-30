@@ -748,7 +748,7 @@
           window.open(url, "_blank", "noopener,noreferrer");
         } else if (channel === "email") {
           var subj = "Postulación RENOVA — " + data.nombre;
-          var mailto = "mailto:renova.alturauy@gmail.com"
+          var mailto = "mailto:" + ["renova.alturauy","gmail.com"].join("@")
             + "?subject=" + encodeURIComponent(subj)
             + "&body=" + encodeURIComponent(body);
           window.location.href = mailto;
@@ -882,7 +882,28 @@
     if (next) next.addEventListener("click", function() { wrap.scrollBy({ left:  stepW * 2, behavior: "smooth" }); });
   }
 
+  /* ─────────────────────────────────────────────────────────────
+     EMAIL OBFUSCATION (anti-scraping)
+  ────────────────────────────────────────── */
+  function initEmailReveal() {
+    document.querySelectorAll(".js-email").forEach(function(el) {
+      var u = el.getAttribute("data-u"), d = el.getAttribute("data-d");
+      if (!u || !d) return;
+      var addr = u + "@" + d;
+      // Si el elemento ya tiene texto custom (ej. "Email"), envolverlo en mailto
+      var custom = el.textContent && el.textContent !== "Cargando…" && el.textContent !== "Cargando..." && el.textContent.trim();
+      var inner = (custom && custom !== "Email") ? custom : addr;
+      el.innerHTML = '<a href="mailto:' + addr + '">' + inner + '</a>';
+    });
+    document.querySelectorAll(".js-email-link").forEach(function(el) {
+      var u = el.getAttribute("data-u"), d = el.getAttribute("data-d");
+      if (!u || !d) return;
+      el.setAttribute("href", "mailto:" + u + "@" + d);
+    });
+  }
+
   function boot() {
+    safe(initEmailReveal,    "email");
     safe(initIntro,          "intro");
     safe(initCursor,         "cursor");
     safe(initNav,            "nav");
